@@ -1,0 +1,5 @@
+1. How is web3 used in componentDidMount? How does the user connect to the blockchain network? This is metamask!
+   The componentDidMount function obtains a web3 instance in order to get an instance of the smart contract. It then populates the tag and merchType datastructures with what is stored on the smart contract.
+
+2. pick one function: fetchLoot, addLoot, or buyLoot and explain in detail what it is doing and how it works. Every line please!
+    Fetch loot fetches all the coins that have been minted by the MerchToken contract and are either for sale or owned by the user. It first updates the state of the app and retrives the number of tokens mminted. It also keeps two empty arrays to keep track of owned or available tokens. These tokens are then converted into an object. The function then iterates through every token and ascertains if it is for sale and is it owned by the user. The state of the app is then updated with the new lists.
